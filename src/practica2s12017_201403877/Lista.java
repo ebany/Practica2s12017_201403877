@@ -14,7 +14,7 @@ import static practica2s12017_201403877.TestWebServer.getString;
  * @author CodigoG
  */
 public class Lista extends javax.swing.JFrame {
-
+    Graphviz g = new Graphviz();
     /**
      * Creates new form Lista
      */
@@ -148,6 +148,7 @@ public class Lista extends javax.swing.JFrame {
         jTextField3.setText("");
         jLabel3.setText("Estado -> "+r);
         System.out.println(r);
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -158,7 +159,8 @@ public class Lista extends javax.swing.JFrame {
         String r = getString("AgregarLista", formBody);
         jTextField1.setText("");
         jLabel1.setText("Estado -> "+r);
-        System.out.println(r);  
+        System.out.println(r); 
+        g.generarGrafica("C:\\txt\\lista.txt", "lista");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -171,6 +173,7 @@ public class Lista extends javax.swing.JFrame {
         jTextField2.setText("");
         jLabel2.setText("Estado -> "+r);
         System.out.println(r); 
+        g.generarGrafica("C:\\txt\\lista.txt", "lista");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**

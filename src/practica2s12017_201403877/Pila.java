@@ -15,6 +15,7 @@ import static practica2s12017_201403877.TestWebServer.getString;
  */
 public class Pila extends javax.swing.JFrame {
 
+    Graphviz g = new Graphviz();
     /**
      * Creates new form Pila
      */
@@ -116,7 +117,7 @@ public class Pila extends javax.swing.JFrame {
         jTextField1.setText("");
         jLabel2.setText("Estado -> "+r);
         System.out.println(r);
-        
+        g.generarGrafica("C:\\txt\\pila.txt", "pila");
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -129,6 +130,7 @@ public class Pila extends javax.swing.JFrame {
         jTextField1.setText("");
         jLabel2.setText("Estado -> "+r);
         System.out.println(r);
+        g.generarGrafica("C:\\txt\\pila.txt", "pila");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
